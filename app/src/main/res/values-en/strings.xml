@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">CountBadHabits</string>
+    
+    <!-- Bottom Navigation -->
+    <string name="today_records">Today Records</string>
+    <string name="history_records">History</string>
+    <string name="settings">Settings</string>
+    
+    <!-- Today Records -->
+    <string name="current_count">Current: %d times</string>
+    <string name="daily_limit">Daily Limit: %d times</string>
+    <string name="limit_exceeded">LIMIT EXCEEDED!</string>
+    <string name="within_limit">Within Limit</string>
+    <string name="no_records_today">No records today</string>
+    <string name="add_record">Add Record</string>
+    <string name="record_time">Trigger Time</string>
+    <string name="record_description">Description</string>
+    <string name="description_hint">Enter description (optional)</string>
+    
+    <!-- Actions -->
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="confirm">Confirm</string>
+    
+    <!-- History -->
+    <string name="previous_month">Previous</string>
+    <string name="next_month">Next</string>
+    <string name="month_view">Month</string>
+    <string name="week_view">Week</string>
+    <string name="monthly_stats">Monthly Stats</string>
+    <string name="yearly_stats">Yearly Stats</string>
+    <string name="no_data">No Data</string>
+    <string name="day_detail_title">%s Details</string>
+    <string name="total_count">Total: %d times</string>
+    
+    <!-- Settings -->
+    <string name="add_new_habit">Add New Habit</string>
+    <string name="habit_name">Habit Name</string>
+    <string name="habit_limit">Daily Limit</string>
+    <string name="habit_name_hint">Enter habit name</string>
+    <string name="edit_habit">Edit Habit</string>
+    <string name="delete_habit">Delete Habit</string>
+    <string name="delete_habit_confirm">Deleting this habit will remove all related records. Are you sure?</string>
+    <string name="habit_name_empty">Habit name cannot be empty</string>
+    <string name="habit_limit_invalid">Limit must be a positive integer</string>
+    
+    <!-- Error Messages -->
+    <string name="error_database">Database operation failed</string>
+    <string name="error_no_habits">Please add at least one bad habit first</string>
+    
+    <!-- Time Related -->
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="sequence_number">#%d</string>
+    
+    <!-- Additional Strings -->
+    <string name="statistics_chart">Statistics Chart</string>
+    <string name="created_on">Created: %s</string>
+    <string name="habit_added">Habit added</string>
+    <string name="habit_updated">Habit updated</string>
+    <string name="habit_deleted">Habit deleted</string>
+    <string name="habit_enabled">Habit enabled</string>
+    <string name="habit_disabled">Habit disabled</string>
+    <string name="record_saved">Record saved</string>
+    <string name="record_updated">Record updated</string>
+    <string name="record_deleted">Record deleted</string>
+    <string name="confirm_delete_record">Confirm delete this record?</string>
+    <string name="day_no_records">No records for this day</string>
+    <string name="added_bad_habits">Added Bad Habits</string>
+</resources>

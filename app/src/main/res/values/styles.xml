@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 应用自定义样式 -->
+    
+    <!-- 卡片样式 -->
+    <style name="AppCardStyle" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">8dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="cardBackgroundColor">@color/card_background</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+    
+    <!-- 按钮样式 -->
+    <style name="AppPrimaryButton" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/purple_500</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">16dp</item>
+    </style>
+    
+    <style name="AppOutlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/purple_500</item>
+        <item name="android:textColor">@color/purple_500</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    
+    <!-- 文本样式 -->
+    <style name="AppTitleText">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+    
+    <style name="AppBodyText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+    
+    <style name="AppSecondaryText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+    
+    <!-- 状态文本样式 -->
+    <style name="AppStatusNormalText" parent="AppTitleText">
+        <item name="android:textColor">@color/status_normal</item>
+    </style>
+    
+    <style name="AppStatusExceededText" parent="AppTitleText">
+        <item name="android:textColor">@color/status_exceeded</item>
+    </style>
+    
+    <!-- 输入框样式 -->
+    <style name="AppEditText" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textColorHint">@color/text_secondary</item>
+    </style>
+    
+</resources>

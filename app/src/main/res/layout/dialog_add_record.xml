@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 时间选择 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/record_time"
+        android:textSize="14sp"
+        android:textColor="@color/text_primary"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@android:drawable/edit_text"
+        android:gravity="center_vertical"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textSize="16sp"
+        android:textColor="@color/text_primary"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginBottom="16dp" />
+
+    <!-- 描述输入 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/record_description"
+        android:textSize="14sp"
+        android:textColor="@color/text_primary"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/et_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/description_hint"
+        android:minHeight="48dp"
+        android:maxLines="3"
+        android:inputType="textMultiLine|textCapSentences"
+        android:textSize="16sp"
+        android:textColor="@color/text_primary"
+        android:textColorHint="@color/text_secondary" />
+
+</LinearLayout>

@@ -1,0 +1,146 @@
+---
+description: 常见项目规则文件
+globs: 
+alwaysApply: false
+---
+# Cursor Rules 配置文件，cursor.directory网站下载
+
+## 后端规范 (Backend)
+### Java
+- **版本**: Java 8
+- **命名规范**:
+  - 类名: PascalCase
+  - 方法/变量: camelCase
+  - 常量: UPPER_SNAKE_CASE
+- **目录结构**:
+  - 控制器: `controllers`
+  - 服务: `services`
+  - Mapper: `mappers`
+  - 实体: `entities`
+  - 配置: `configurations`
+- **框架**:
+  - Spring Boot: 2.x
+  - MyBatis Plus: 启用
+  - 数据库: PostgreSQL
+- **验证**:
+  - 使用 Bean Validation
+  - 常用注解: `@Valid`, `@NotNull`, `@Size`
+- **日志**:
+  - 框架: SLF4J
+  - 日志级别: ERROR, WARN, INFO, DEBUG
+- **测试**:
+  - 单元测试: JUnit4
+  - Mock 框架: Mockito
+  - 集成测试: `@SpringBootTest`
+
+---
+
+## 前端规范 (Frontend)
+### Vue 2
+- **命名规范**:
+  - 组件: PascalCase
+  - 变量: camelCase
+  - 常量: UPPER_SNAKE_CASE
+- **目录结构**:
+  - 静态资源: `assets`
+  - 组件: `components`
+  - 页面: `views`
+  - 路由: `router`
+  - 状态管理: `store`
+  - 接口请求: `api`
+  - 工具函数: `utils`
+- **库**:
+  - UI 框架: ElementUI
+  - 状态管理: Vuex
+  - HTTP 客户端: Axios
+- **路由**:
+  - 启用懒加载
+- **测试**:
+  - 单元测试: Jest
+  - 组件测试: Vue Test Utils
+
+---
+
+## 数据库规范 (Database)
+### PostgreSQL
+- **命名规范**:
+  - 表名: snake_case
+  - 列名: snake_case
+- **约束**:
+  - 主键: UUID
+  - 时间戳: TIMESTAMP WITH TIME ZONE
+  - 布尔值: BOOLEAN
+  - 字符串: VARCHAR(length)
+- **索引**:
+  - 主键: PRIMARY KEY
+  - 唯一: UNIQUE
+  - 常用: BTREE
+
+---
+
+## 安全规范 (Security)
+### 后端
+- 框架: Spring Security
+- 密码加密: BCrypt
+- 启用 CORS
+
+### 前端
+- 使用 HTTPS
+- 敏感信息加密
+
+---
+
+## 文档生成 (Documentation)
+### 后端
+- API 文档: Swagger
+- 版本: 2.9.2
+
+### 前端
+- 组件文档: jsdoc/vue-styleguidist
+
+---
+
+## 构建与部署 (Build & Deploy)
+### 后端
+- 构建工具: Maven
+- 环境配置: dev, test, prod
+- 容器化: Docker
+
+### 前端
+- 构建工具: Vue CLI, npm
+- 环境文件: `.env.development`, `.env.production`
+
+---
+
+## 最佳实践 (Best Practices)
+- 遵循 SOLID 原则
+- 高内聚低耦合
+- RESTful API 设计
+- 微服务: 可选
+
+---
+
+## 代码检查 (Linting)
+### 后端 
+- 工具: Checkstyle
+- 规则:
+  - 缩进: 4 空格
+  - 最大行长度: 120
+
+### 前端
+- 工具: ESLint
+- 规则:
+  - 缩进: 2 空格
+  - 引号: 单引号
+  - 分号: 禁用
+
+---
+
+## 自动修复 (Auto Fix)
+### 后端
+- 保存时格式化
+- 自动整理导入
+
+### 前端
+- 保存时格式化
+- 自动修复 Linting 错误

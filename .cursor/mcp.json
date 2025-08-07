@@ -1,0 +1,42 @@
+{
+  "mcpServers": {
+    "smd-online-mcp": {
+      "url": "http://smd.thunisoft.com:8089/sse",
+      "env": {}
+    },
+    "kingbase-mcp": {
+      "command": "python",
+      "args": ["E:/test_code/Kingbase-mcp/main.py"],
+      "env": {
+        "KINGBASE_HOST": "172.16.70.165",
+        "KINGBASE_PORT": "54321",
+        "KINGBASE_USERNAME": "sysdba",
+        "KINGBASE_PASSWORD": "123456",
+        "KINGBASE_DATABASE": "db_zfba",
+        "KINGBASE_SECURITY_MODE": "readonly",
+        "KINGBASE_ALLOWED_SCHEMAS": "DB_ZFBA,DB_WSZZ,DB_SZZS",
+        "KINGBASE_ENABLE_QUERY_LOG": "true",
+        "KINGBASE_MAX_RESULT_ROWS": "100"
+      }
+    },
+    "context7": {
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp@latest"],
+      "alwaysAllow": ["resolve-library-id"]
+    },
+    "mcp-feedback-enhanced": {
+      "command": "uvx",
+      "args": ["mcp-feedback-enhanced@latest"],
+      "timeout": 600,
+      "autoApprove": ["interactive_feedback"]
+    },
+    "sequential-thinking": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-sequential-thinking@latest"],
+      "timeout": 300,
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
+  }
+}

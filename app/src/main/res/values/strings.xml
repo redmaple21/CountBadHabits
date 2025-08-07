@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">CountBadHabits</string>
+    
+    <!-- 底部导航 -->
+    <string name="today_records">当日记录</string>
+    <string name="history_records">历史记录</string>
+    <string name="settings">设置</string>
+    
+    <!-- 当日记录 -->
+    <string name="current_count">当前：%d 次</string>
+    <string name="daily_limit">每日上限：%d 次</string>
+    <string name="limit_exceeded">已超过上限！</string>
+    <string name="within_limit">未超过上限</string>
+    <string name="no_records_today">今日暂无记录</string>
+    <string name="add_record">添加记录</string>
+    <string name="record_time">触发时间</string>
+    <string name="record_description">触发详情</string>
+    <string name="description_hint">请输入触发详情（可选）</string>
+    
+    <!-- 操作 -->
+    <string name="save">保存</string>
+    <string name="cancel">取消</string>
+    <string name="edit">编辑</string>
+    <string name="delete">删除</string>
+    <string name="confirm">确认</string>
+    
+    <!-- 历史记录 -->
+    <string name="previous_month">上月</string>
+    <string name="next_month">下月</string>
+    <string name="month_view">月视图</string>
+    <string name="week_view">周视图</string>
+    <string name="monthly_stats">月统计</string>
+    <string name="yearly_stats">年统计</string>
+    <string name="no_data">暂无数据</string>
+    <string name="day_detail_title">%s 详情</string>
+    <string name="total_count">总计：%d 次</string>
+    
+    <!-- 设置 -->
+    <string name="add_new_habit">添加新习惯</string>
+    <string name="habit_name">习惯名称</string>
+    <string name="habit_limit">触发上限</string>
+    <string name="habit_name_hint">请输入习惯名称</string>
+    <string name="edit_habit">编辑习惯</string>
+    <string name="delete_habit">删除习惯</string>
+    <string name="delete_habit_confirm">删除此习惯将会删除所有相关记录，确认删除吗？</string>
+    <string name="habit_name_empty">习惯名称不能为空</string>
+    <string name="habit_limit_invalid">上限必须为正整数</string>
+    
+    <!-- 错误信息 -->
+    <string name="error_database">数据库操作失败</string>
+    <string name="error_no_habits">请先添加至少一个坏习惯</string>
+    
+    <!-- 时间相关 -->
+    <string name="today">今天</string>
+    <string name="yesterday">昨天</string>
+    <string name="sequence_number">第%d次</string>
+    
+    <!-- 新增字符串 -->
+    <string name="statistics_chart">统计图表</string>
+    <string name="created_on">创建于: %s</string>
+    <string name="habit_added">习惯已添加</string>
+    <string name="habit_updated">习惯已更新</string>
+    <string name="habit_deleted">习惯已删除</string>
+    <string name="habit_enabled">习惯已启用</string>
+    <string name="habit_disabled">习惯已禁用</string>
+    <string name="record_saved">记录已保存</string>
+    <string name="record_updated">记录已更新</string>
+    <string name="record_deleted">记录已删除</string>
+    <string name="confirm_delete_record">确认删除这条记录吗？</string>
+    <string name="day_no_records">当日无触发记录</string>
+    <string name="added_bad_habits">已添加的坏习惯</string>
+</resources>
